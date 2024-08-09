@@ -1,0 +1,249 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+/* Basic styles for the navbar */
+
+.navbar {
+    background-color: #520af9;
+    color: #fff;
+    overflow: hidden;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin-right: 20px;
+}
+
+.navbar .nav-links li a {
+    color: #ff0b0b;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/* Styles for the hamburger menu */
+
+.navbar .burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.navbar .burger .line1, .navbar .burger .line2, .navbar .burger .line3 {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: #333;
+        padding: 10px;
+    }
+
+    .navbar .nav-links.active {
+        display: flex;
+    }
+
+    .navbar .burger {
+        display: flex;
+    }
+
+    .navbar .burger.active .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .navbar .burger.active .line2 {
+        opacity: 0;
+    }
+
+    .navbar .burger.active .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+}
+
+.section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+ input[type="text"],
+ input[type="password"],
+ input[type="datetime-local"],
+textarea,
+ input[type="submit"] {
+    display: block;
+    margin: 10px 20px;
+    padding: 10px;
+    width: 80%;
+    border-radius: 150px;
+    font: 1em sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul li form {
+    margin: 0;
+}
+
+ul li form input[type="submit"] {
+    background-color: #f00;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+label{
+    margin-left: 15px;
+}
+
+ul li form input[type="submit"]:hover {
+    background-color: #c00;
+}
+
+ul li form[action="edit.php"] input[type="submit"],ul li form[action="delete.php"] input[type="submit"] {
+ background: transparent;
+  color: whitesmoke;
+  margin-left: 0px;
+}
+
+ul li form[action="edit.php"] input[type="submit"]:hover {
+    background-color: #555;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    margin: 20px;
+}
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+body{
+    background: linear-gradient(to right,rgb(246,235,171),rgb(247,171,233));
+    color: black;
+    font: 1.2em sans-serif;
+}
+.submit{
+    background-color: purple;
+    color: whitesmoke;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-left: 15px;
+}
+
+
+.form-group textarea {
+    resize: vertical; /* Allow vertical resizing of textarea */
+}
+
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+span{
+    color: red;
+    padding-right: 20px;
+}
+
+
+.e{
+    color: whitesmoke;
+    margin: 5px;
+}
+.s{
+    color: rgb(0, 34, 204);
+    font-size: larger;
+}
+h1,h4,p{
+    margin: auto;
+    text-align: center;
+}
+input{
+    border-radius: 50px;
+    line-height: 2em;
+}
